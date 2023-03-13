@@ -30,27 +30,22 @@ def run(contours, masks, art, automata_patterns, portraits, spectra, signals, wr
 
 	# 3. Paradigm shift
 	print("Computing scene 3 ...")
-	# frame = plt.imread("./output/frames/scene_2/00177.png") ##
 	frame = scene_3(frame, spectra, signals, writer)
 
 	# 4. Habitat
 	print("Computing scene 4 ...")
-	# frame = plt.imread("./output/frames/scene_3/02462.png") ##
 	frame = scene_4(frame, masks, contours, writer)
 
 	# 5. Harmonic Synthesis
 	print("Computing scene 5 ...")
-	# frame = plt.imread("./output/frames/scene_4/02477.png") ##
 	frame = scene_5(frame, spectra, signals, writer)
 
 	# 6. Carteian refinement
 	print("Computing scene 6 ...")
-	# frame = plt.imread("./output/frames/scene_5/04922.png") ##
 	frame = scene_6(frame, contours, writer)
 
 	# 7. Homeostasis
 	print("Computing scene 7 ...")
-	# frame = plt.imread("./output/frames/scene_6/07877.png") ##
 	frame, automata = scene_7(frame, contours, masks, art, automata_patterns, writer)
 
 	# 8. Abstraction
